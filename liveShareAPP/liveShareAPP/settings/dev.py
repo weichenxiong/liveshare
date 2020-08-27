@@ -284,20 +284,20 @@ AUTHENTICATION_BACKENDS = [
 # 腾讯防水墙配置
 TENCENT_CAPTCHA = {
     "GATEWAY": "https://ssl.captcha.qq.com/ticket/verify",
-    "APPID": "2086888489",
-    "App_Secret_Key": "0TGMvQXvBZ54r9bOWrNYEhA**",
+    "APPID": "",
+    "App_Secret_Key": "",
 }
 
 
 # 短信接口配置
 SMS = {
     # 主账号，登陆云通讯网站后，可在"控制台-应用"中看到开发者主账号ACCOUNT SID
-    "_accountSid":'8aaf07086d05d00c016d1f6ea6f80ed0',
+    "_accountSid":'',
     # 主账号Token，登陆云通讯网站后，可在控制台-应用中看到开发者主账号AUTH TOKEN
-    # "_accountToken":'1451bb3a13e14bb3b083b07cf828e38e',
-    "_accountToken":'1451bb3a13e14bb3b083b07cf828e38e',
+    # "_accountToken":'',
+    "_accountToken":'',
     # 请使用管理控制台首页的APPID或自己创建应用的APPID
-    "_appId":'8aaf07086d05d00c016d1f6ea74f0ed7',
+    "_appId":'',
     # 请求地址，生产环境配置成app.cloopen.com， 沙箱环境地址： sandboxapp.cloopen.com
     "_serverIP":'sandboxapp.cloopen.com',
     # 请求端口 ，生产环境为8883，沙箱环境也是这个
@@ -315,9 +315,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.163.com'
 EMAIL_PORT = 25
 #发送邮件的邮箱
-EMAIL_HOST_USER = 'w13662594836@163.com'
+EMAIL_HOST_USER = ''
 #在邮箱中设置的客户端授权密码
-EMAIL_HOST_PASSWORD = 'renranwang2020'
+EMAIL_HOST_PASSWORD = ''
 # renranwang2020
 #收件人看到的发件人
 EMAIL_FROM = 'renran<w13662594836@163.com>'
@@ -338,8 +338,8 @@ MEDIA_URL ="/media/"
 
 
 # QQ登录参数
-QQ_APP_ID = '101403367'
-QQ_APP_KEY = '93112df14c10d6fde74baa62f5de95ab'
+QQ_APP_ID = ''
+QQ_APP_KEY = ''
 QQ_REDIRECT_URL = 'http://www.moluo.net:8080/oauth_callback.html'
 QQ_STATE = "/"  # 用于保存登录成功后的跳转页面路径
 
@@ -356,7 +356,7 @@ FDFS_CLIENT_CONF = os.path.join(BASE_DIR, 'utils/fastdfs/client.conf')
 ALIAPY_CONFIG = {
     # "gateway_url": "https://openapi.alipay.com/gateway.do?", # 真实支付宝网关地址
     "gateway_url": "https://openapi.alipaydev.com/gateway.do?", # 沙箱支付宝网关地址
-    "appid": "2016101200669610",
+    "appid": "",
     "app_notify_url": None,
     "app_private_key_path": os.path.join(BASE_DIR, "apps/payment/keys/app_private_key.pem"),
     "alipay_public_key_path": os.path.join(BASE_DIR, "apps/payment/keys/alipay_public_key.pem"),
@@ -368,7 +368,7 @@ ALIAPY_CONFIG = {
 
 # 表格存储的配置
 # tablestore
-OTS_ID = "LTAI4Frxs5CpaUPqCopEnygA"                    # access_key_id
-OTS_SECRET = "LZEnYcfOZcucc0mVlZLxHBK3vOt9dm"  # access_key_secret
-OTS_INSTANCE = "python67"                    # 表格存储的实例
+OTS_ID = ""                    # access_key_id
+OTS_SECRET = ""  # access_key_secret
+OTS_INSTANCE = ""                    # 表格存储的实例
 OTS_ENDPOINT = "https://python67.cn-hangzhou.ots.aliyuncs.com"  # 实例所在的公网地址
