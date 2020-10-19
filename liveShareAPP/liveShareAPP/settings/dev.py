@@ -299,11 +299,11 @@ SMS = {
     # 请使用管理控制台首页的APPID或自己创建应用的APPID
     "_appId":'',
     # 请求地址，生产环境配置成app.cloopen.com， 沙箱环境地址： sandboxapp.cloopen.com
-    "_serverIP":'sandboxapp.cloopen.com',
+    "_serverIP":'',
     # 请求端口 ，生产环境为8883，沙箱环境也是这个
-    "_serverPort":"8883",
+    "_serverPort":"",
     # REST API版本号
-    "_softVersion": '2013-12-26',
+    "_softVersion": '',
 }
 
 
@@ -320,7 +320,7 @@ EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 # renranwang2020
 #收件人看到的发件人
-EMAIL_FROM = 'renran<w13662594836@163.com>'
+EMAIL_FROM = ''
 
 
 
@@ -355,15 +355,15 @@ FDFS_CLIENT_CONF = os.path.join(BASE_DIR, 'utils/fastdfs/client.conf')
 # 支付宝
 ALIAPY_CONFIG = {
     # "gateway_url": "https://openapi.alipay.com/gateway.do?", # 真实支付宝网关地址
-    "gateway_url": "https://openapi.alipaydev.com/gateway.do?", # 沙箱支付宝网关地址
+    "gateway_url": "", # 沙箱支付宝网关地址
     "appid": "",
     "app_notify_url": None,
-    "app_private_key_path": os.path.join(BASE_DIR, "apps/payment/keys/app_private_key.pem"),
-    "alipay_public_key_path": os.path.join(BASE_DIR, "apps/payment/keys/alipay_public_key.pem"),
+    "app_private_key_path": os.path.join(BASE_DIR, ""),
+    "alipay_public_key_path": os.path.join(BASE_DIR, ""),
     "sign_type": "RSA2",
     "debug": False,
-    "return_url": "http://www.moluo.net:8080/user/wallet", # 同步回调地址
-    "notify_url": "http://api.liveshare.cn:8000/payment/alipay/result", # 异步结果通知
+    "return_url": "", # 同步回调地址
+    "notify_url": "", # 异步结果通知
 }
 
 # 表格存储的配置
@@ -371,4 +371,4 @@ ALIAPY_CONFIG = {
 OTS_ID = ""                    # access_key_id
 OTS_SECRET = ""  # access_key_secret
 OTS_INSTANCE = ""                    # 表格存储的实例
-OTS_ENDPOINT = "https://python67.cn-hangzhou.ots.aliyuncs.com"  # 实例所在的公网地址
+OTS_ENDPOINT = ""  # 实例所在的公网地址
